@@ -1,8 +1,14 @@
-"Aikaleima,""Mitä odotat kurssilta?"",""Mitä työkaluja olet käyttännyt?"",""Millainen kommunikointi teamillä on?"",""Onko teamin työnjako selkeä?"",""Kuinka motivoitunut olet kurssista?""";;;
-"2016/10/28 2:00:03 ip. UTC+3,""Jotain"",""Google Forms"",""Erinomainen"",""Kyllä"",""4""";;;
-"2016/10/28 2:06:18 ip. UTC+3,""Front end suunnittelua"",""Google Forms"",""Hyvä"",""Kyllä"",""4""";;;
-"2016/10/28 2:06:31 ip. UTC+3,""Projektityöskentelyä"",""Google Forms"",""Hyvä"",""Kyllä"",""3""";;;
-"2016/10/28 2:08:30 ip. UTC+3,""Mainetta ja kunniaa"",""Github";Trello;"Google Forms"",""Erinomainen"",""Kyllä"",""3""";
-"2016/10/28 2:08:56 ip. UTC+3,""Yhteistyötä"",""Github"",""Erinomainen"",""Kyllä"",""4""";;;
-"2016/10/28 2:10:27 ip. UTC+3,""Lisää tietoa aiheesta"",""Github";"Google Forms"",""Erinomainen"",""Kyllä"",""4""";;
-"2016/10/28 2:10:41 ip. UTC+3,""en tiedä"",""Github";Slack;Trello;"Google Forms"",""Hyvä"",""Ei"",""2"""
+"Aikaleima","Mitä odotat kurssilta?","Millä päätelaitteella täytät tätä kyselyä?","Kuinka monta kysymystä on hyvä olla kyselyssä?","Minkälaisiin kysymystyyppeihin vastaat mieluiten?","Millainen kommunikointi teamillä on?","Onko teamin työnjako selkeä?","Kuinka motivoitunut olet kurssista?","Minkä kyselyn ulkoasusta pidät eniten?"
+"2016/11/04 1:37:57 ip. UTC+2","vitosta","Tietokone","Alle 10","Monivalinta","Erinomainen","Kyllä","4","Kysely 2"
+"2016/11/04 1:39:54 ip. UTC+2","tiimityöskentelyä","Tietokone","Alle 10","Monivalinta","Erinomainen","Kyllä","4","Kysely 1"
+"2016/11/04 1:41:40 ip. UTC+2","Paljon kivaa koodausta","Tietokone","Alle 5","Monivalinta","Hyvä","Kyllä","4","Kysely 1"
+"2016/11/04 2:01:49 ip. UTC+2","Uuden oppimista","Tietokone","Alle 5","Monivalinta","Hyvä","Ei","3","Kysely 3"
+"2016/11/04 2:04:39 ip. UTC+2","ei tiedä","Tietokone","Alle 10","Monivalinta","Hyvä","Kyllä","4","Kysely 3"
+"2016/11/04 2:06:40 ip. UTC+2","Hyvää kivaa","Tietokone","Alle 10","Monivalinta","Erinomainen","Ei","4","Kysely 3"
+"2016/11/04 2:07:38 ip. UTC+2","emt","Tietokone","Alle 10","Monivalinta","Hyvä","Kyllä","3","Kysely 3"
+"2016/11/04 2:10:55 ip. UTC+2","javaa","Tietokone","Alle 5","Monivalinta","Erinomainen","Kyllä","5","Kysely 3"
+"2016/11/04 2:12:57 ip. UTC+2","5","Tietokone","Alle 10","Arvosteluasteikko","Erinomainen","Kyllä","5","Kysely 3"
+"2016/11/04 2:14:24 ip. UTC+2","4","Tietokone","Alle 10","Monivalinta","Hyvä","Kyllä","4","Kysely 3"
+"2016/11/04 2:14:26 ip. UTC+2","h","Tietokone","Alle 10","Monivalinta","Erinomainen","Kyllä","5","Kysely 3"
+"2016/11/04 5:12:54 ip. UTC+2","uuden oppimista","Tietokone","Alle 10","Monivalinta","Erinomainen","Kyllä","4","Ulkoasu 3"
+"2016/11/07 12:18:57 ip. UTC+2","Uusien asioiden oppimista","Tietokone","Alle 10","Arvosteluasteikko","Erinomainen","Kyllä","4","Ulkoasu 3"
