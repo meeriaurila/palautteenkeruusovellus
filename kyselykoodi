@@ -1,0 +1,117 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kysely</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+</head>
+
+<body>
+<div class="container">
+
+<h1>Kysely</h1>
+
+<div id="Vastaukset">
+
+</div>
+
+<br>
+
+
+<input type = "button" id = "driver" value = "Lähetä" />
+<input type = "button" id = "vastaukset" value = "Näytä Vastaukset" />
+</div>
+<br>
+<div id= "Data">
+
+</div>
+
+
+
+
+<script type = "text/javascript">
+         $(document).ready(function() {
+		 
+			      $.getJSON('http://proto437.haaga-helia.fi:8080/Feedback/returnQuestion', function(jd) {
+                  $('#Vastaukset').html('<p> 1. ' + jd.question + '</p>');
+                  $('#Vastaukset').append('<input type="radio" name="vastaus1" value="Erinomainen" id="vastaus1_1">' + jd.radioList[0]+ '');
+                  $('#Vastaukset').append('<input type="radio" name="vastaus1" value="Kiitettävä" id="vastaus1_2">' + jd.radioList[1]+ '');
+				  $('#Vastaukset').append('<input type="radio" name="vastaus1" value="Hyvä" id="vastaus1_3">' + jd.radioList[2]+ '');
+				  $('#Vastaukset').append('<input type="radio" name="vastaus1" value="Tyydyttävä" id="vastaus1_4">' + jd.radioList[3]+ '');
+				  $('#Vastaukset').append('<input type="radio" name="vastaus1" value="Heikko" id="vastaus1_5">' + jd.radioList[4]+ '');
+               });	   
+
+			$("#driver").click(function(event){
+               var valinta = $('input[name="vastaus1"]:checked').val();
+			   var vastaus = JSON.stringify({"radio": valinta, "queryId": 0});
+				
+				/*alert("lähetän: "+vastaus);*/
+				
+				$.ajax({
+					url: 'http://proto437.haaga-helia.fi:8080/Feedback/saveFeedback',
+					method: 'post',
+					data: vastaus,
+					contentType: "application/json; charset=utf-8",
+					success: function(data){
+						alert("Vastaus lähetetty!");
+					},
+					error: function(errMsg) {
+						alert("failed");
+					}
+				});
+		
+            });
+
+			
+			$("#vastaukset").click(function(event){
+	
+				
+				 $.getJSON('http://proto437.haaga-helia.fi:8080/Feedback/returnFeedback', function(jd) {
+		/* tämä jäi kesken */			 
+						/*var erinomainenlaskuri =0;
+						var kiitettavalaskuri =0;
+						var hyvalaskuri =0;
+						var tyydyttavalaskuri =0;
+						var heikkolaskuri =0;
+						var muulaskuri =0;
+						 
+						if (element.radio == "Erinomainen") {
+								erinomainenlaskuri++;
+						 }else if (element.radio == "Kiitettävä") {
+								kiitettavalaskuri++;
+						 }else if (element.radio == "Hyvä") {
+								hyvalaskuri++;
+						 }else if (element.radio == "Tyydyttävä") {
+								tyydyttavalaskuri++;
+						 }else if (element.radio == "Heikko"){
+								heikkolaskuri++;
+						 }else{
+								muulaskuri++;
+						 }*/
+						 
+					 $(jd).each(function( index, element ) {
+						 $('#Data').append(element.radio + "<br>");
+					 });
+				});
+			});
+		 });
+			
+      </script>
+
+	  
+	  
+<!-- <script src="js/jquery-1.11.3.min.js"></script>
+
+[name="vastaus1"]
+
+-->
+</body>
+</html>
